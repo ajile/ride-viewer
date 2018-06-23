@@ -1,0 +1,17 @@
+@import "bootstrap/normalize";
+
+@import "components";
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template: 50px auto 1fr / 1fr;
+  grid-template-areas: "header" "main" "footer";
+  grid-row-gap: 1px;
+  justify-content: space-around;
+}
+
+.main {
+  grid-area: main;
+  padding: 10px;
+}
